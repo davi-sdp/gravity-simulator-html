@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle da Bola com Teclado</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+        .falling-object {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="falling-object"></div>
+
+    <div class="controls">
+        <strong>Controls:</strong><br>
+        <ul>
+            <li><strong>W, A, S, D</strong> - Move the ball</li>
+            <li><strong>K</strong> - Freeze the ball</li>
+            <li><strong>J</strong> - Remove forces on the ball</li>
+        </ul>
+    </div>
+
+    <audio id="impact-sound" src="hit.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
